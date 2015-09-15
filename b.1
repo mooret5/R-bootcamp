@@ -65,5 +65,12 @@ Y[Y > mean(Y)]
 a <- c(5, 3, 6, NA)
 a
 is.na(a)
+!is.na(a)
+a[!is.na(a)]
+na.exclude(a)
+mean(a)
+mean(a, na.rm = TRUE)
+d <- na.exclude(a)
+mean(d)
 
 
